@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo App</title>
+  <style>
+    
+
+    body{
+      background-color: #d8ecd6;
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow:hidden;
+    }
+
+
+    .mainContainer{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 200px;
+      /* display: flex; */
+    }
+
+    input{
+      height: 34px;
+      /* width: 200px; */
+    }
+
+    .topContainer{
+      min-width: 300px;
+      
+    }
+    #input_box{
+
+      height: 34px;
+      width: 300px;
+      
+
+    }
+
+    #date_picker{
+      height: 34px;
+      width: 200px;
+      
+      
+    }
+    
+
+    .addTask{
+      height: 40px;
+      width: 100px;
+      
+    }
+
+
+    @media (min){
+      
+    }
+    #toDoContainer{
+      background-color: #bce3c1 ;
+      overflow-x: auto;
+      max-height: 200px;
+      
+    }
+
+    #deleteButton{
+      margin-top: 5px;
+      margin-left: 25px;
+      margin-bottom: 10px; 
+      /* color: red; 
+      border-radius:5px; 
+      border:0px  */
+      
+      height:5px;
+    }
+
+    .delbtn{
+      height: 5px;
+      
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="mainContainer">
+
+    <div class="topContainer">
+      <input type="text" id="input_box">
+      <input type="date" id="date_picker">
+      <button onclick="addToDo()" class="addTask">Add Task</button>
+    </div>
+    
+    <div id="toDoContainer">
+
+    </div>
+  </div>
+  <img src="" alt="">
+  <script src="index.js"></script>
+
+  
+</body>
+</html>
